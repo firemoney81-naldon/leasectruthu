@@ -1,23 +1,1084 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+  <!-- Schema.org JSON-LD Structured Data for Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "더올뉴 쏘렌토 장기렌트카",
+    "image": "https://images.unsplash.com/photo-1619767886558-efdc259cde1a",
+    "description": "2026년형 기아 더올뉴 쏘렌토 하이브리드 및 가솔린 모델 장기렌트카 가격 비교, 맞춤형 견적 안내 및 혜택 정리",
+    "brand": {
+      "@type": "Brand",
+      "name": "기아"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "KRW",
+      "lowPrice": "440000",
+      "highPrice": "650000",
+      "offerCount": "100"
+    }
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD Structured Data for FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "더올뉴 쏘렌토 장기렌트카의 월 평균 대여료는 대략 얼마인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "2026년 기준으로 선납금 30% 설정 시 가솔린 2.5 터보 모델은 월 44만 원대, 하이브리드 1.6 터보 모델은 월 40만 원 중반에서 50만 원대의 예상 대여 요금이 책정됩니다. 초기 비용 없이 가입하는 무보증 조건의 경우 월 요금이 약 10만 원에서 15만 원가량 상승할 수 있습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "장기렌트의 장단점 중 가장 큰 단점은 무엇인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "가장 많이 언급되는 단점은 번호판이 하, 허, 호로 고정되어 대여 차량임을 외관상 알 수 있다는 점입니다. 또한 중도 해지 시 발생하는 중도해지위약금 요율이 높은 편이므로 계약 기간을 신중하게 선택해야 합니다. 반면 개인 보험 경력이 단절된다는 차이점이 있습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "20대 신규 운전자의 경우 장기렌트가 유리한가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "네, 매우 유리합니다. 20대 초반이나 신규 면허 취득자의 경우 개인 자동차 보험료가 평균적으로 매우 높게 산정되지만, 장기렌트는 업체의 단체 요율이 적용되므로 만 21세 또는 만 26세 이상 전용 요금제를 이용하면 훨씬 합리적인 예산으로 신차를 운용할 수 있습니다."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD Structured Data for ItemList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "더올뉴 쏘렌토 장기렌트카 활용 및 가격 절약 가이드",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Article",
+          "url": "https://rent.reliabledone.com/sorento/guide",
+          "name": "2026년형 쏘렌토 장기렌트 비용 절약 전략"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Article",
+          "url": "https://rent.reliabledone.com/sorento/review",
+          "name": "하이브리드 장기렌트 실제 내돈내산 후기 비교"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts & Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #1E293B;      /* Slate 800 */
+      --primary-dark: #0F172A; /* Slate 900 */
+      --secondary: #4F46E5;    /* Indigo 600 */
+      --secondary-light: #EEF2F6;
+      --accent: #0EA5E9;       /* Sky 500 */
+      --accent-light: #E0F2FE;
+      --neutral-bg: #F8FAFC;   /* Slate 50 */
+      --card-bg: #FFFFFF;
+      --border-color: #E2E8F0; /* Slate 200 */
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --success: #10B981;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--neutral-bg);
+      color: var(--text-main);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: var(--secondary);
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, #1e1b4b 100%);
+      color: #FFFFFF;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2.85rem;
+      font-weight: 900;
+      line-height: 1.3;
+      margin: 0 0 20px 0;
+      letter-spacing: -1px;
+    }
+
+    .hero-text h1 span {
+      color: var(--accent);
+    }
+
+    .hero-text p {
+      font-size: 1.15rem;
+      color: #94A3B8;
+      margin-bottom: 30px;
+    }
+
+    /* Interactive Calculator Form in Hero */
+    .calculator-card {
+      background-color: var(--card-bg);
+      color: var(--text-main);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--border-color);
+    }
+
+    .calculator-card h3 {
+      font-size: 1.4rem;
+      margin-top: 0;
+      margin-bottom: 24px;
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--border-color);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      box-sizing: border-box;
+      background-color: #FAFAFA;
+      transition: border-color 0.2s, background-color 0.2s;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--secondary);
+      background-color: #FFFFFF;
+    }
+
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .radio-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .radio-label {
+      border: 1.5px solid var(--border-color);
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      background-color: #FAFAFA;
+    }
+
+    .radio-group input {
+      display: none;
+    }
+
+    .radio-group input:checked + .radio-label {
+      border-color: var(--secondary);
+      background-color: var(--secondary-light);
+      color: var(--secondary);
+    }
+
+    .slider-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .slider-container input {
+      flex: 1;
+    }
+
+    .slider-val {
+      font-weight: 700;
+      color: var(--secondary);
+      width: 45px;
+      text-align: right;
+    }
+
+    .calc-btn {
+      background-color: var(--secondary);
+      color: #FFFFFF;
+      width: 100%;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .calc-btn:hover {
+      background-color: #4338CA;
+    }
+
+    /* Result Card Display */
+    .result-display {
+      background-color: #F1F5F9;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 20px;
+      border: 1px dashed var(--border-color);
+    }
+
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    .result-row:last-child {
+      margin-bottom: 0;
+      padding-top: 8px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .result-row span {
+      font-weight: 500;
+    }
+
+    .result-row .price-val {
+      color: var(--secondary);
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    /* Content Body Grid Layout */
+    .content-layout {
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 40px;
+      padding: 60px 0;
+    }
+
+    /* Main Content Section */
+    .main-article {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+      border: 1px solid var(--border-color);
+    }
+
+    .main-article h2 {
+      color: var(--primary-dark);
+      font-size: 1.85rem;
+      font-weight: 800;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid var(--secondary-light);
+      padding-bottom: 12px;
+    }
+
+    .main-article h2:first-child {
+      margin-top: 0;
+    }
+
+    .main-article h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .main-article p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    /* Custom Tables */
+    .table-responsive {
+      overflow-x: auto;
+      margin: 25px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background-color: var(--primary);
+      color: #FFFFFF;
+      padding: 14px 16px;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    tr:nth-child(even) {
+      background-color: var(--neutral-bg);
+    }
+
+    /* Accent list designs */
+    ul.accent-list, ol.accent-list {
+      padding-left: 20px;
+      margin-bottom: 24px;
+    }
+
+    ul.accent-list li, ol.accent-list li {
+      margin-bottom: 10px;
+      padding-left: 4px;
+    }
+
+    ul.accent-list li::marker {
+      color: var(--secondary);
+    }
+
+    /* Sidebar Section */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .widget {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+      border: 1px solid var(--border-color);
+    }
+
+    .widget-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-top: 0;
+      margin-bottom: 16px;
+      border-left: 4px solid var(--secondary);
+      padding-left: 12px;
+    }
+
+    /* Keyword Tags */
+    .keyword-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .keyword-tag {
+      background-color: var(--secondary-light);
+      color: var(--secondary);
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .keyword-tag:hover {
+      background-color: var(--secondary);
+      color: #FFFFFF;
+    }
+
+    /* FAQ Accordion */
+    .faq-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background-color: var(--neutral-bg);
+      overflow: hidden;
+    }
+
+    .faq-trigger {
+      padding: 18px 24px;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-trigger::after {
+      content: '+';
+      font-size: 1.2rem;
+      color: var(--secondary);
+    }
+
+    .faq-item.active .faq-trigger::after {
+      content: '-';
+    }
+
+    .faq-content {
+      padding: 0 24px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      background-color: var(--card-bg);
+    }
+
+    .faq-item.active .faq-content {
+      padding: 18px 24px;
+      max-height: 500px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    /* External Reference Links */
+    .reference-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .reference-list li {
+      margin-bottom: 12px;
+    }
+
+    .reference-list a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .reference-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary-dark);
+      color: #94A3B8;
+      padding: 48px 0;
+      border-top: 1px solid #1E293B;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+
+    .footer-brand h4 {
+      color: #FFFFFF;
+      font-size: 1.2rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: flex-end;
+      gap: 24px;
+    }
+
+    .footer-links a {
+      color: #94A3B8;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #FFFFFF;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #1E293B;
+      padding-top: 24px;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 991px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .content-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="logo">SORENTO<span>RENT</span></a>
+      <nav>
+        <a href="#intro">쏘렌토 안내</a>
+        <a href="#comparison">트림별 비교</a>
+        <a href="#pricing">장기렌트 견적</a>
+        <a href="#faq">자주 묻는 질문</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>2026년형 기아<br><span>더올뉴 쏘렌토 장기렌트카</span></h1>
+        <p>
+          복잡한 세금과 비싼 초기 보험료 걱정 없이, 스마트한 비대면 온라인 요금제 비교를 통해 최저가 대여 요금을 즉시 산정해 보세요. 개인사업자 비용처리는 물론 개별소비세 인하 혜택이 적용된 실시간 맞춤 견적 서비스를 제공합니다.
+        </p>
+      </div>
+      
+      <!-- Interactive Calculator Card -->
+      <div class="calculator-card" id="calc-area">
+        <h3>실시간 가상 계산기</h3>
+        <form id="calculatorForm" onsubmit="return false;">
+          <div class="form-group">
+            <label for="engine">파워트레인 종류 선택</label>
+            <select id="engine" class="form-control" onchange="calculateRental()">
+              <option value="hev">1.6 터보 하이브리드 (2WD)</option>
+              <option value="gas">2.5 가솔린 터보 (2WD)</option>
+              <option value="diesel">2.2 디젤 (2WD)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="trim">트림 등급</label>
+            <select id="trim" class="form-control" onchange="calculateRental()">
+              <option value="prestige">프레스티지 (Prestige)</option>
+              <option value="noblesse">노블레스 (Noblesse)</option>
+              <option value="signature">시그니처 (Signature)</option>
+              <option value="gravity">그래비티 (Gravity)</option>
+            </select>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="term">계약 기간</label>
+              <select id="term" class="form-control" onchange="calculateRental()">
+                <option value="36">36개월</option>
+                <option value="48" selected>48개월</option>
+                <option value="60">60개월</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mileage">연간 주행거리</label>
+              <select id="mileage" class="form-control" onchange="calculateRental()">
+                <option value="10000">1만 km 이하</option>
+                <option value="20000" selected>2만 km 이하</option>
+                <option value="30000">3만 km 이하</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="age">보험 연령 조건</label>
+            <select id="age" class="form-control" onchange="calculateRental()">
+              <option value="21">만 21세 이상</option>
+              <option value="26" selected>만 26세 이상</option>
+              <option value="30">만 30세 이상</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>초기 납입 구조</label>
+            <div class="radio-group">
+              <div>
+                <input type="radio" id="prepay" name="payType" value="prepay" checked onchange="calculateRental()">
+                <label for="prepay" class="radio-label">선납금 방식</label>
+              </div>
+              <div>
+                <input type="radio" id="deposit" name="payType" value="deposit" onchange="calculateRental()">
+                <label for="deposit" class="radio-label">보증금 방식</label>
+              </div>
+            </div>
+            <div class="slider-container">
+              <input type="range" id="payPercent" min="0" max="50" step="10" value="30" oninput="updateSliderVal(this.value)">
+              <span class="slider-val" id="sliderValDisplay">30%</span>
+            </div>
+          </div>
+
+          <button class="calc-btn" onclick="calculateRental()">상세 견적 계산하기</button>
+        </form>
+
+        <!-- Live Estimate Result Display -->
+        <div class="result-display">
+          <div class="result-row">
+            <span>차량 출고 가격:</span>
+            <span id="resCarPrice">38,960,000 원</span>
+          </div>
+          <div class="result-row">
+            <span>설정 기간:</span>
+            <span id="resTerm">48개월</span>
+          </div>
+          <div class="result-row">
+            <span>설정 거리:</span>
+            <span id="resMileage">20,000 km</span>
+          </div>
+          <div class="result-row">
+            <span>예상 월 대여료:</span>
+            <span class="price-val" id="resMonthly">455,200 원</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content & Layout Grid -->
+  <main class="container content-layout">
+    
+    <!-- Main Editorial Article -->
+    <article class="main-article" id="intro">
+      <h2>더올뉴 쏘렌토 장기렌트카 시장의 트렌드와 2026년 변화 양상</h2>
+      <p>
+        대한민국 중형 SUV 시장의 명실상부한 기준이 된 기아자동차의 더올뉴 쏘렌토는 2026년식으로 거듭나면서 상품 경쟁력이 한층 더 견고해졌습니다. 최근 자동차 구매 트렌드는 단순히 자산으로 소유하는 개념을 넘어서 월 사용 요금 중심의 합리적 소비로 급격히 전환되고 있습니다. 이로 인해 인터넷과 모바일 기반의 쏘렌토 장기렌트카 이용 비율이 급격하게 가파른 우상향 곡선을 그리는 추세입니다.
+      </p>
+      <p>
+        특히 2026년도에 들어서 친환경차 실효 세제 혜택 조건 및 자동차 등록세 개편이 맞물리며 신차를 초기 세금 부담 없이 즉시 확보할 수 있는 대여 상품의 선호도가 고공행진하고 있습니다. 20대 신규 취득자나 30대 신혼부부 등 신규 구매 가입 비율이 가장 가파르게 늘어나는 차종 역시 기아 쏘렌토 하이브리드 제품입니다.
+      </p>
+
+      <h3>파워트레인별 특징: 하이브리드 vs 가솔린 vs 디젤</h3>
+      <p>
+        쏘렌토의 파워트레인은 세 가지 종류로 압축할 수 있습니다. 각 모델은 초기 출고 가격과 월 대여료, 장단점에서 뚜렷한 차이점을 드러내므로 본인의 평균 연간 주행 습관에 가장 일치하는 방식을 선별해야 합니다.
+      </p>
+      
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>파워트레인 종류</th>
+              <th>트림 기본 가격 범위</th>
+              <th>연비 요율</th>
+              <th>주요 장점</th>
+              <th>주요 단점</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.6 터보 하이브리드 (HEV)</td>
+              <td>약 3,896만 원 ~ 4,888만 원</td>
+              <td>복합 15.7 km/ℓ</td>
+              <td>최고 수준의 정숙성 및 도심 연비, 세제 혜택</td>
+              <td>가장 높은 초기 출고가</td>
+            </tr>
+            <tr>
+              <td>2.5 가솔린 터보</td>
+              <td>약 3,580만 원 ~ 4,260만 원</td>
+              <td>복합 10.8 km/ℓ</td>
+              <td>강력한 마력 출력 성능, 저렴한 차량 시작가</td>
+              <td>도심 서행 시 다소 아쉬운 유류 요금</td>
+            </tr>
+            <tr>
+              <td>2.2 디젤 (특수 트림)</td>
+              <td>약 3,750만 원 ~ 4,431만 원</td>
+              <td>복합 14.3 km/ℓ</td>
+              <td>고속 장거리 항속 주행 시 압도적인 토크감</td>
+              <td>진동 소음 증가 리스크 및 디젤 환경 요금 부담</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>장기렌트의 핵심 장단점 분석: 다이렉트 가입 전 필수 숙지사항</h2>
+      <p>
+        신차를 구매하는 방식에는 대리점에서 직접 전액 현금 혹은 일시불 캐피탈 할부 금융으로 계약을 하는 방법과, 보증금 또는 선수금 일부를 걸어두고 렌탈사 명의로 계약하는 장기렌트 요금제 방식이 존재합니다. 양자 간에는 아래와 같은 뚜렷한 금융 구조적 차이점이 발생합니다.
+      </p>
+
+      <h3>1. 대출 한도 및 신용도 영향 제로</h3>
+      <p>
+        보편적인 캐피탈 자동차 할부는 신용 등급상 대출 부채로 분류되는 반면, 더올뉴 쏘렌토 장기렌트카 상품은 단순 대여 서비스이므로 본인의 기대출 한도 감소나 신용 점수 변동에 하등의 영향이 전혀 미치지 않습니다. 이는 향후 부동산 아파트 디딤돌 대출이나 전세 자금 대출 등의 신용 컨설팅 계획을 앞둔 가계에 가장 매력적인 장점 중 하나로 작용합니다.
+      </p>
+
+      <h3>2. 사고 시 보험료 할증 프리 패스</h3>
+      <p>
+        신규 면허 가입자 혹은 운전 미숙자인 20대 초반 청년층의 경우 무사고 경력이 짧아 다이렉트 자가용 자동차 보험에 단독 가입할 때 매년 수백만 원에 달하는 비싼 금액의 요금이 청구되곤 합니다. 하지만 장기렌트는 전업 렌탈 업체의 법인 단체 종합 보험 요율이 기본적으로 탑재되어 있어 사고가 수차례 발생해 자차 소손 및 대물 배상 처리를 진행하더라도 본인 부담금(약 10만 원에서 30만 원 상당의 면책금)만 일회성으로 치르고 나면 익월 렌트 요금이 단 1원도 가산되지 않는 구조입니다.
+      </p>
+
+      <h3>3. 감가상각 및 처분의 편리함</h3>
+      <p>
+        디시인사이드, 보배드림, 펨코(에펨코리아) 등 국내 유수 자갤 커뮤니티에서 늘 화두가 되는 이른바 내돈내산 쏘렌토 중고 가액 낙폭 논쟁으로부터 매우 자유롭습니다. 통상 3년에서 5년으로 설정하는 임대 기간의 약정이 종료될 즈음에 감가 리스크를 고스란히 껴안을 필요 없이 자유롭게 계약서를 통해 반납 처리를 해버리면 그만이기 때문에, 감가 상각 스트레스로 밤잠을 설칠 필요가 전혀 없다는 것이 실이용자들의 주된 호평 요소입니다.
+      </p>
+
+      <h2>연령별 요금 영향 및 초기 보증 비율 설정 팁</h2>
+      <p>
+        렌트 요율은 기본적으로 가입을 원하고자 하는 운전자의 연령 제한(만 21세 조건 및 만 26세 이상)에 따라 월 납입해야 하는 금액에 미미하지만 유의미한 변동을 동반합니다. 더불어 계약자가 월 납입 수수료를 제일 싼곳에서 확보하기 위해서 가장 집중해야 할 구체적인 장치들은 선납금과 보증금의 영리한 구별법입니다.
+      </p>
+
+      <h3>선납금(선수금) 방식과 보증금 방식의 정밀한 차이</h3>
+      <p>
+        많은 온라인 플랫폼이나 구글 검색, 인스타그램 다이렉트 광고 좌표 등을 타고 훑어보았을 때 발견되는 기형적으로 지나치게 싼 저가 요금 매물들의 대다수는 실상 선납금 30%가량이 녹아든 가견적 결과물인 경우가 다반사입니다.
+      </p>
+      <ul class="accent-list">
+        <li><strong>선납금(선수금)</strong>: 미리 월 렌탈 요금의 총합 중 일부 액수를 선제적으로 선납 지불하여 차감하는 성격으로, 계약 만기 시 돌려받을 수 없는 소멸성 소모 비용입니다. 대신 겉보기에 월 고정 지출 요금이 눈에 띄게 줄어든 느낌을 받게 됩니다.</li>
+        <li><strong>보증금</strong>: 임대 회사에 고이 맡겨두는 은행 정기 예금과 동일한 성질의 자금으로 계약 완료 후 단 일체의 흠집 수수료 차감 없이 전액 무결하게 전액 수령해 나갈 수 있는 실 자산입니다. 매달 이자 차감분 형식의 우대 할인을 반영 받아 전체 지출 예상 비용을 최저가 수준으로 묶어두는 데 가장 압도적으로 효율적인 방식입니다.</li>
+      </ul>
+
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>구분 요율</th>
+              <th>가솔린 2.5T 프레스티지</th>
+              <th>하이브리드 1.6T 노블레스</th>
+              <th>하이브리드 1.6T 시그니처</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>초기비용 0% (무보증)</td>
+              <td>월 약 58만 원 ~ 62만 원</td>
+              <td>월 약 64만 원 ~ 68만 원</td>
+              <td>월 약 70만 원 ~ 74만 원</td>
+            </tr>
+            <tr>
+              <td>보증금 30% 기탁</td>
+              <td>월 약 53만 원 ~ 57만 원</td>
+              <td>월 약 59만 원 ~ 63만 원</td>
+              <td>월 약 65만 원 ~ 69만 원</td>
+            </tr>
+            <tr>
+              <td>선납금 30% 소멸</td>
+              <td>월 약 44만 원 ~ 47만 원</td>
+              <td>월 약 48만 원 ~ 52만 원</td>
+              <td>월 약 54만 원 ~ 58만 원</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>현명한 쏘렌토 장기렌트 다이렉트 계약을 돕는 AI 및 모바일 플랫폼 도구</h2>
+      <p>
+        스마트한 비대면 2026년 계약 환경에서는 영업 사원의 중간 중개 수수료 거품을 원천 제거한 무수수료 직접 제휴 플랫폼들이 큰 인기를 구가하고 있습니다. 네이버 카페나 유투브의 생생한 계약 출고 채널, 카카오톡 1:1 채팅 컨설팅 창구를 통하면 번거로운 전화 권유 없이 터치 몇 번만으로 10분 이내에 카톡 메신저를 통해 모의 가산 견적 명세서를 일목요연하게 즉각 수령할 수 있습니다.
+      </p>
+      <p>
+        더불어 토스 앱의 내 차량 제휴 시세 조회 기능이나, 구글 및 챗지피티, 제미나이 등 고도화된 AI 거대 언어 모델에게 나의 연 소득 대비 합리적인 적정 차량 등급 비율을 맞춤 제안받는 일도 이제는 흔한 일상이 되었습니다. 신규 전용 프로모션으로 연계되는 모바일 주유 상품권 이벤트나 블랙박스 프리미엄 선팅 무료 시공 등의 보너스 사은품, 정해진 조건에 충족하는 경우 지원금 및 현금지원 추가 혜택 정보까지 꼼꼼히 대조해 보실 것을 제안합니다.
+      </p>
+    </article>
+
+    <!-- Sidebar & Sticky Content -->
+    <aside class="sidebar">
+      
+      <!-- Interactive Widget: Quick Contact Request -->
+      <div class="widget">
+        <h4 class="widget-title">장기렌트 맞춤 비대면 상담</h4>
+        <form action="#" method="get" onsubmit="alert('상담 신청이 완료되었습니다. 담당자가 순차적으로 카카오톡 혹은 전화를 통해 안내해 드립니다.'); return false;">
+          <div class="form-group">
+            <label for="usr-name">성명</label>
+            <input type="text" id="usr-name" class="form-control" placeholder="성함 입력" required>
+          </div>
+          <div class="form-group">
+            <label for="usr-phone">연락처</label>
+            <input type="tel" id="usr-phone" class="form-control" placeholder="휴대폰 번호 입력" required>
+          </div>
+          <div class="form-group">
+            <label for="usr-region">거주 지역</label>
+            <select id="usr-region" class="form-control">
+              <option>서울특별시/수도권</option>
+              <option>부산/영남권</option>
+              <option>대구/경북권</option>
+              <option>광주/호남권</option>
+              <option>대전/충청권</option>
+              <option>강원/제주권</option>
+            </select>
+          </div>
+          <button type="submit" class="calc-btn" style="background-color: var(--success);">1:1 전문가 견적 신청</button>
+        </form>
+      </div>
+
+      <!-- Reference Websites Widget -->
+      <div class="widget">
+        <h4 class="widget-title">공식 정보 및 권장 사이트</h4>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:16px;">
+          국내 자동차 법규 표준 고시 및 객관적 가격 지표 수치를 상세하게 살펴볼 수 있는 외부 공식 망입니다.
+        </p>
+        <ul class="reference-list">
+          <li>
+            <a href="https://leasectruthv.withusrizz.com" target="_blank" rel="noopener">
+              Reliabledone 장기렌트 종합 수수료 가이드
+            </a>
+          </li>
+          <li>
+            <a href="https://namu.wiki/w/%EC%9E%A5%EA%B8%B0%EB%A0%8C%ED%8A%B8" target="_blank" rel="noopener">
+              나무위키 자동차 장기렌트 정의와 특징
+            </a>
+          </li>
+          <li>
+            <a href="https://www.kia.com" target="_blank" rel="noopener">
+              기아자동차 대한민국 공식 사이트
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- FAQ Accordion inside Sidebar / Bottom context -->
+      <div class="widget" id="faq">
+        <h4 class="widget-title">자주 하시는 질문 (FAQ)</h4>
+        <div class="faq-accordion">
+          
+          <div class="faq-item">
+            <button class="faq-trigger">월 대여 비용 이외 추가 지출이 있나요?</button>
+            <div class="faq-content">
+              <p>
+                아닙니다. 기본적으로 제공되는 월 대여요금에는 자동차세, 취등록세, 매해 납부해야 하는 자동차 종합 책임 보험료가 일절 모두 포괄적으로 선반영되어 있습니다. 따라서 가입자는 오직 매달 운행에 필요한 유류 비용 내지 통행료, 주차 요금 정도만 개별 지출하시면 됩니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">중도해지 시 위약금 계산은 어떻게 되나요?</button>
+            <div class="faq-content">
+              <p>
+                남은 계약 임대 기간 동안 총 납부해야 하는 렌탈료 총액의 약 10% 내지 39% 수준의 위약 수수료가 남은 개월 수에 비례하여 역산 처리되어 청구됩니다. 중도 탈퇴 리스크가 걱정되는 분들은 타인에게 계약을 고스란히 양도하는 승계 제도를 활용하는 요령을 추천해 드립니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">법인 사업자의 소득세 감면 한도가 얼마인가요?</button>
+            <div class="faq-content">
+              <p>
+                연간 최대 1,500만 원 선에서 임차 요금과 유류비 등의 제반 유지비 전액을 비용으로 귀속하여 법인 소득세 혹은 종합소득세 과세 대상에서 정직하게 감면 처리를 실현할 수 있어 고액 과세 계층에 매우 유용합니다.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Related Keywords Widget -->
+      <div class="widget">
+        <h4 class="widget-title">통합 연관 검색 키워드</h4>
+        <div class="keyword-cloud">
+          <a href="#calc-area" class="keyword-tag">평균 얼마</a>
+          <a href="#calc-area" class="keyword-tag">예상 금액</a>
+          <a href="#calc-area" class="keyword-tag">최저가 견적</a>
+          <a href="#calc-area" class="keyword-tag">인터넷 가입</a>
+          <a href="#calc-area" class="keyword-tag">단기 렌트 요금제</a>
+          <a href="#calc-area" class="keyword-tag">20대 보험 차이점</a>
+          <a href="#calc-area" class="keyword-tag">디시인사이드 후기</a>
+          <a href="#calc-area" class="keyword-tag">보배드림 추천</a>
+          <a href="#calc-area" class="keyword-tag">펨코 성지 좌표</a>
+          <a href="#calc-area" class="keyword-tag">AI 상담 어플</a>
+          <a href="#calc-area" class="keyword-tag">신규 사은품 지원금</a>
+          <a href="#calc-area" class="keyword-tag">토스 챗지피티 연계</a>
+        </div>
+      </div>
+
+    </aside>
+  </main>
+
+  
+  <!-- Responsive Logic & Interactive Calculator Script -->
+  <script>
+    // FAQ Toggle functionality
+    document.querySelectorAll('.faq-trigger').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+
+    // Handle range slider text updates
+    function updateSliderVal(val) {
+      document.getElementById('sliderValDisplay').innerText = val + '%';
+      calculateRental();
+    }
+
+    // Direct Rent Calculator Formula
+    function calculateRental() {
+      const engine = document.getElementById('engine').value;
+      const trim = document.getElementById('trim').value;
+      const term = parseInt(document.getElementById('term').value);
+      const mileage = parseInt(document.getElementById('mileage').value);
+      const age = parseInt(document.getElementById('age').value);
+      const payType = document.querySelector('input[name="payType"]:checked').value;
+      const payPercent = parseInt(document.getElementById('payPercent').value);
+
+      // Base price setting by engine
+      let baseCarPrice = 35800000; // Gasoline 2.5T Prestige Baseline
+      if (engine === 'hev') {
+        baseCarPrice = 38960000; // Hybrid 1.6T Prestige Baseline
+      } else if (engine === 'diesel') {
+        baseCarPrice = 37500000; // Diesel 2.2 Prestige Baseline
+      }
+
+      // Premium addition by trim
+      if (trim === 'noblesse') {
+        baseCarPrice += 3200000;
+      } else if (trim === 'signature') {
+        baseCarPrice += 5700000;
+      } else if (trim === 'gravity') {
+        baseCarPrice += 6500000;
+      }
+
+      // Baseline monthly payment (approximated for 60 months zero down)
+      let baseMonthly = baseCarPrice / 58;
+
+      // Adjustments based on Contract Period
+      if (term === 36) {
+        baseMonthly *= 1.15;
+      } else if (term === 48) {
+        baseMonthly *= 1.06;
+      } else if (term === 60) {
+        baseMonthly *= 1.00;
+      }
+
+      // Adjustments based on Annual Mileage Limit
+      if (mileage === 10000) {
+        baseMonthly *= 0.96;
+      } else if (mileage === 30000) {
+        baseMonthly *= 1.08;
+      }
+
+      // Age-Based Insurance premium coefficient
+      if (age === 21) {
+        baseMonthly *= 1.18;
+      } else if (age === 26) {
+        baseMonthly *= 1.05;
+      } else if (age === 30) {
+        baseMonthly *= 0.98;
+      }
+
+      // Prepays / Deposit reductions
+      let calculatedMonthly = baseMonthly;
+      if (payType === 'prepay') {
+        // Linear reduction: each 10% prepay reduces monthly cost by around 8.5%
+        calculatedMonthly = baseMonthly * (1 - (payPercent / 100) * 0.85);
+      } else if (payType === 'deposit') {
+        // Linear reduction: each 10% deposit reduces monthly cost by around 3%
+        calculatedMonthly = baseMonthly * (1 - (payPercent / 100) * 0.30);
+      }
+
+      // Update UI elements
+      document.getElementById('resCarPrice').innerText = baseCarPrice.toLocaleString() + ' 원';
+      document.getElementById('resTerm').innerText = term + '개월';
+      document.getElementById('resMileage').innerText = mileage.toLocaleString() + ' km 이하';
+      document.getElementById('resMonthly').innerText = Math.round(calculatedMonthly).toLocaleString() + ' 원';
+    }
+
+    // Initialize calculator once on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      calculateRental();
+    });
+  </script>
+
+  
